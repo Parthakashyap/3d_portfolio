@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom"
 const Navbar = () => {
   return (
     <header className="header">
-        <NavLink to="/" className="w-10 h-10 rounded-tl-lg rounded-br-lg bg-white items-center justify-center flex font-bold shadow-lg">
-            <p className="blue-gradient_text">PK</p>
+        <NavLink to="/" className="w-20 h-9 rounded-tl-lg rounded-br-lg bg-white items-center justify-center flex font-bold shadow-lg">
+            <p className="blue-gradient_text">Partha</p>
 
         </NavLink>
         <nav className="flex text-lg gap-7 font-medium">

@@ -37,7 +37,7 @@ const Home = () => {
       {currentStage && <HomeInfo currentStage={currentStage} />}
     </div>
       <Canvas 
-        className={`w-full h-screen bg-transparent $ {isRotating ? 'cursor-grabbing' : 'cursor-grab'}`}
+        className={`w-full h-screen bg-transparent ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`}
         camera={{near: 0.1, far: 1000}}
         >
           <Suspense fallback={<Loader />}>

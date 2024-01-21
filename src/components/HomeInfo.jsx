@@ -2,9 +2,14 @@ import React from 'react'
 
 const renderContent = {
     1: (
-        <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>HI, i am 
-        <span className='font-semibold'> Partha👋</span>
-        </h1>
+    <div class="w-max">
+        <h1 class=" overflow-hidden whitespace-nowrap text-5xl text-black font-bold">Hey,</h1>
+       
+    <div class="w-max">
+        <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black pr-5 text-6xl text-black font-bold">I am Partha</h1>
+    </div>
+       
+    </div>
     ),
     2: (
         <h1>2</h1>

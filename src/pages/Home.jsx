@@ -4,6 +4,7 @@ import Loader from '../components/Loader'
 //import Imac from '../models/Imac'
 import Imac from '../models/Imac'
 import HomeInfo from '../components/HomeInfo'
+import autoprefixer from 'autoprefixer'
 
 
 
@@ -32,7 +33,7 @@ const Home = () => {
 
   return (
     <section className='w-full h-screen relative'>
-    <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
+    <div className='absolute top-60 left-20 right-45 z-10 flex items-center justify-center'>
       {currentStage && <HomeInfo currentStage={currentStage} />}
     </div>
       <Canvas 

@@ -8,18 +8,9 @@ const renderContent = {
     <div class="w-max">
         <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black pr-5 text-6xl text-black font-bold">I am Partha</h1>
     </div>
-       
+          
     </div>
-    ),
-    2: (
-        <h1>2</h1>
-    ),
-    3: (
-        <h1>3</h1>
-    ),
-    4: (
-        <h1>4</h1>
-    ),
+    )
 }
 
 const InfoBox = ({text, link, btnText}) => (

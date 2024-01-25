@@ -7,7 +7,6 @@ import HomeInfo from '../components/HomeInfo'
 import autoprefixer from 'autoprefixer'
 
 
-
 const Home = () => {
   const [isRotating, setisRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1)

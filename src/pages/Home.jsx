@@ -1,4 +1,4 @@
-import { useState, Suspense } from 'react';
+import { useState, Suspense, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import Loader from '../components/Loader';
 import Imac from '../models/Imac';
@@ -24,27 +24,32 @@ const Home = () => {
     return [screenScale, screenPosition, rotation];
   };
 
-  const [ImacScale, ImacPosition, Imacrotation] = adjustImacForScreenSize();
+  const [ImacScale, setImacScale] = useState(adjustImacForScreenSize()[0]);
+  const [ImacPosition, setImacPosition] = useState(adjustImacForScreenSize()[1]);
+  const [Imacrotation, setImacRotation] = useState(adjustImacForScreenSize()[2]);
 
-  const adjustTextSizeForScreenSize = () => {
-    if (window.innerWidth < 768) {
-      return 'text-sm'; // Adjust the size as needed for small screens
-    } else {
-      return 'text-lg'; // Adjust the size as needed for larger screens
-    }
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      const [newImacScale, newImacPosition, newImacRotation] = adjustImacForScreenSize();
+      setImacScale(newImacScale);
+      setImacPosition(newImacPosition);
+      setImacRotation(newImacRotation);
+    };
 
-  const textSizeClass = adjustTextSizeForScreenSize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <section className='w-full h-screen relative'>
-      <div className={`absolute top-60 left-10 right-30 z-10 flex items-center justify-center ${textSizeClass}`}>
+      <div className='absolute top-60 left-20 right-45 z-10 flex items-center justify-center'>
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
       <Canvas
-        className={`w-full h-screen bg-transparent ${
-          isRotating ? 'cursor-grabbing' : 'cursor-grab'
-        }`}
+        className={`w-full h-screen bg-transparent ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`}
         camera={{ near: 0.1, far: 1000 }}
       >
         <Suspense fallback={<Loader />}>

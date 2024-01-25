@@ -181,3 +181,19 @@ body:has(.card[data-color="green"]:hover) {
   box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
 }
+
+/* Your global styles or component stylesheet */
+
+@media (max-width: 640px) {
+  .animate-typing {
+    font-size: 7vw; /* Adjust as needed for smaller screens */
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .animate-typing {
+    font-size: 6vw; /* Adjust as needed for medium-sized screens */
+  }
+}
+
+/* Add more media queries for other screen size ranges as needed */

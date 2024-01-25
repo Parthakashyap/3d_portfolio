@@ -182,7 +182,7 @@ body:has(.card[data-color="green"]:hover) {
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
 }
 
-/* Your global styles or component stylesheet */
+/* Extra */
 
 @media (max-width: 640px) {
   .animate-typing {
@@ -196,4 +196,6 @@ body:has(.card[data-color="green"]:hover) {
   }
 }
 
-/* Add more media queries for other screen size ranges as needed */
+/* Extra */
+
+

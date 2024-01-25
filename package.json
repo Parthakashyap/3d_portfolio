@@ -10,13 +10,25 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.23.4",
     "@react-spring/three": "^9.7.3",
+    "@react-spring/web": "^9.7.3",
     "@react-three/drei": "^9.96.1",
-    "@react-three/fiber": "^8.15.14",
+    "@react-three/fiber": "^8.15.15",
+    "gitart-scroll-carousel": "^1.3.1",
+    "gitart-vue-dialog": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
     "react-router-dom": "^6.21.3",
-    "tailwindcss-animate": "^1.0.7"
+    "react-spring": "^9.7.3",
+    "react-spring-3d-carousel": "^1.3.4",
+    "react-three-fiber": "^6.0.13",
+    "react-use-gesture": "^9.1.3",
+    "react-vue": "^0.0.5",
+    "swiper": "^11.0.5",
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.160.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

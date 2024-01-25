@@ -18,7 +18,7 @@ const About = () => {
                 <p>I am a passionate computer science student with a keen interest in crafting dynamic and user-friendly websites. My enthusiasm extends to the realm of cybersecurity, where I explore the ever-evolving landscape of digital security. Beyond coding and web development, I channel my creativity into designing intricate Blender models. A perpetual learner, I thrive on the excitement of acquiring new skills and knowledge. Join me on this journey of innovation and continuous growth! </p>
               </div>
               <div className="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
-                <p>See me on <a className="font-bold text-blue-700" href="/projects"> Projects {'>>'} </a></p>
+                <p>Check out my <a className="font-bold text-blue-700" href="/projects"> Projects {'>>'} </a></p>
               </div>
             </div>
           </div>
